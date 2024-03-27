@@ -2,7 +2,7 @@
 import { watch, ref, type Ref, onBeforeMount } from 'vue'
 
 import Chart from 'primevue/chart'
-import MultiSelect from 'primevue/multiSelect'
+import MultiSelect from 'primevue/multiselect'
 
 import { fetchQuotation, type TResponse } from '@/services/fetchQuotation'
 import { fetchCurrenciesOptions } from '@/services/fetchCurrenciesOptions'
@@ -84,7 +84,7 @@ setInterval(async () => {
 	if (currency.value.length > 0) {
 		await getQuotation()
 	}
-}, 10000)
+}, 30000)
 
 const getQuotation = async () => {
 	const currenciesToFetch = currency.value!.map((currency) => currency.label)
