@@ -13,7 +13,7 @@ export default defineConfig({
 	},
 	build: {
 		rollupOptions: {
-			external: ['primevue']
+			external: ['primevue', 'primevue/multiSelect']
 		}
 	}
 })
