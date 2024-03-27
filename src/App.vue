@@ -4,12 +4,12 @@ import { watch, ref, type Ref, onBeforeMount } from 'vue'
 import Chart from 'primevue/chart'
 import MultiSelect from 'primevue/multiSelect'
 
-import { fetchQuotation, type TResponse } from './services/fetchQuotation'
-import { fetchCurrenciesOptions } from './services/fetchCurrenciesOptions'
+import { fetchQuotation, type TResponse } from '@/services/fetchQuotation'
+import { fetchCurrenciesOptions } from '@/services/fetchCurrenciesOptions'
 
-import { setChartOptions } from './utils/setchartOptions'
-import { setChartData } from './utils/setChartData'
-import { updateChartCurrencyData } from './utils/updateChartCurrencyData'
+import { setChartOptions } from '@/utils/setchartOptions'
+import { setChartData } from '@/utils/setChartData'
+import { updateChartCurrencyData } from '@/utils/updateChartCurrencyData'
 
 const currency: Ref<{ label: string; value: string }[]> = ref([])
 const currencyOptions = ref()
